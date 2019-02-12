@@ -15,7 +15,7 @@ ActiveRecord::Schema.define(version: 2019_02_12_101759) do
   create_table "tasks", force: :cascade do |t|
     t.string "title"
     t.string "details"
-    t.boolean "completed", null: false
+    t.boolean "completed", default: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
